@@ -47,14 +47,19 @@ Merge data set result
 Assign column names.
 
 ## Section 2. Extract only the measurements on the mean and standard deviation for each measurement. 
-Create a logcal vector that contains TRUE values for the ID, mean and stdev columns and FALSE values for the others.
-Subset this data to keep only the necessary columns.
+Use the function grepl to extract from features rows containing the pattern "mean() or std() others.
+Subset this data to keep only variables "measurements on the mean and standard deviation"
 
 ## Section 3. Use descriptive activity names to name the activities in the data set
-Merge data subset with the activityType table to cinlude the descriptive activity names
+Merge data subset with the activity_labels table to add the activity names
+The shared columns used to merge the data.tables is activityId
 
 ## Section 4. Appropriately label the data set with descriptive activity names.
 Use gsub function for pattern replacement to clean up the data labels.
 
 ## Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
-Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
+Data are stored in data.table
+Use package(dplyr)
+group data by subjectID, activityId, activityName
+Summarise to createthe the average of each veriable for each activity and subject
+
