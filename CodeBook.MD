@@ -36,13 +36,11 @@ For each record in the dataset it is provided:
             - y_test.txt
 ### Section 1. Merge the training and the test sets to create one data set.
 
-Result :
---------------------------------------------------
- subjectId         activityId       V1, V2 ...
---------------------------------------------------
-subject_train   | Y_train        | X_train
-subject_test    | Y_test         | X_test 
---------------------------------------------------
+| subjectId     	| activityId 	| V1,V2 .. 	|
+|---------------	|------------	|----------	|
+| subject_train 	| Y_train    	| X_train  	|
+| subject_test  	| Y_test     	| X_test   	|
+
 
 Assign column names.
 
