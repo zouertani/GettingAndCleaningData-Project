@@ -18,6 +18,12 @@ How to execute the script
    (if not uncomment the lines : download.file(fileUrl, destfile = "./Dataset.zip") 
 3. Run the R script `run_analysis.r`.
 
+### Source Data
+The data are collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+[The source data for this project can be found here.](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 Outputs produced
 ----------------
