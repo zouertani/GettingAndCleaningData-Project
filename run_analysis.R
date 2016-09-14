@@ -12,12 +12,16 @@
 # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
 # and export the the tidyData set
 
-## Download data
+
+# Create a directory data in the working directory to store data set
 if (!file.exists("data")) {dir.create("data")}
+## Download data in the working directory
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl, destfile = "./data/Dataset.zip")
+# the Samsung data is suposed to be downloaded in the working directory (if not execute the below command)
+# download.file(fileUrl, destfile = "./Dataset.zip")
+
 ## Unzip the file : library(utils)
-unzip(zipfile="./data/Dataset.zip",exdir="./data")
+unzip(zipfile="./Dataset.zip",exdir="./data")
 ## The archive put the files in a folder named ./data/UCI HAR Dataset
 
 ## library(data)
