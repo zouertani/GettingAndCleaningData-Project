@@ -1,9 +1,23 @@
+##########################################################################################################
+
+## Coursera Getting and Cleaning Data Course Project
+
+# run_analysis.R perform the following steps :
+# download and unzip the UCI HAR Dataset downloaded from 
+# https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+# 1. Merge the training and the test sets to create one data set.
+# 2. Extract only the measurements on the mean and standard deviation for each measurement. 
+# 3. Use descriptive activity names to name the activities in the data set
+# 4. Appropriately label the data set with descriptive activity names. 
+# 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
+# and export the the tidyData set
+
 ## Download data
-#if (!file.exists("data")) {dir.create("data")}
+if (!file.exists("data")) {dir.create("data")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-#download.file(fileUrl, destfile = "./data/Dataset.zip")
+download.file(fileUrl, destfile = "./data/Dataset.zip")
 ## Unzip the file : library(utils)
-#unzip(zipfile="./data/Dataset.zip",exdir="./data")
+unzip(zipfile="./data/Dataset.zip",exdir="./data")
 ## The archive put the files in a folder named ./data/UCI HAR Dataset
 
 ## library(data)
