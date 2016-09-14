@@ -140,6 +140,6 @@ colNames <- gsub("-std-","StdDev-",colNames)
  
  # Export the tidyData set 
  
- write.table(dtTidy, './data/dtTidy.txt',row.names=TRUE,sep='\t')
+ write.table(dtTidy, './data/dtTidy.txt',row.names=FALSE,sep='\t')
  
  
